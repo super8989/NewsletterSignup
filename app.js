@@ -15,7 +15,9 @@ require('dotenv').config();
 const API = process.env.API;
 // console.log(process.env);
 
-app.listen(3000, () => console.log('Server is running on port 3000'));
+app.listen(process.env.PORT || 3000, () =>
+	console.log('Server is running on port 3000')
+);
 
 app.get('/', (req, res) => {
 	res.sendFile(__dirname + '/signup.html');
@@ -46,8 +48,8 @@ app.post('/', (req, res) => {
 		method: 'POST',
 		headers: {
 			Authorization: `sam ${API}`
-		}
-		// body: jsonData
+		},
+		body: jsonData
 	};
 
 	request(options, (error, response, body) => {

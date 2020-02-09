@@ -46,8 +46,8 @@ app.post('/', (req, res) => {
 		method: 'POST',
 		headers: {
 			Authorization: `sam ${API}`
-		},
-		body: jsonData
+		}
+		// body: jsonData
 	};
 
 	request(options, (error, response, body) => {
@@ -65,3 +65,7 @@ app.post('/', (req, res) => {
 
 // List id
 // 795a2a1b64
+
+app.post('/failure', (req, res) => {
+	res.redirect('/');
+});

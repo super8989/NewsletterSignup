@@ -4,13 +4,13 @@
 
 ## Preview
 
-![ScreenShot](https://raw.github.com/super8989/Newsletter/master/public/images/1.png)
+![ScreenShot](https://raw.github.com/super8989/NewsletterSignup/master/public/images/1.png)
 
 
-![ScreenShot](https://raw.github.com/super8989/Newsletter/master/public/images/2.png)
+![ScreenShot](https://raw.github.com/super8989/NewsletterSignup/master/public/images/2.png)
 
 
-![ScreenShot](https://raw.github.com/super8989/Newsletter/master/public/images/3.png)
+![ScreenShot](https://raw.github.com/super8989/NewsletterSignup/master/public/images/3.png)
 
 
 

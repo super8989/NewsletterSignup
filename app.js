@@ -13,7 +13,7 @@ app.use(
 
 require('dotenv').config();
 const API = process.env.API;
-console.log(process.env);
+// console.log(process.env);
 
 app.listen(3000, () => console.log('Server is running on port 3000'));
 
@@ -52,9 +52,13 @@ app.post('/', (req, res) => {
 
 	request(options, (error, response, body) => {
 		if (error) {
-			console.log(error);
+			res.send('There was an error with singing up. Please try again');
 		} else {
-			console.log(response.statusCode);
+			if (response.statusCode === 200) {
+				res.send('Successfully subscribed');
+			} else {
+				res.send('There was an error with singing up. Please try again');
+			}
 		}
 	});
 });
